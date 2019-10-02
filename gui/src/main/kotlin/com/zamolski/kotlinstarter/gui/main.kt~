@@ -1,0 +1,6 @@
+package com.zamolski.alotofkotlins.gui
+
+fun main(args: Array<String>) {
+	println("A Lot Of Kotlins!")
+}
+
