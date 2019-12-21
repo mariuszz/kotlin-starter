@@ -18,14 +18,16 @@ Multi module Gradle Kotlin DSL.
 ./gradlew :console:run
 ```
 
-### Gui
+### Gui ([JavaFX](https://openjfx.io))
 
 ```
 ./gradlew :gui:run
 ```
 
-### Web
+### Web ([Ktor](https://ktor.io))
 
 ```
 ./gradlew :web:run
 ```
+
+
