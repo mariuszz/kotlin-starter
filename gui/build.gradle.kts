@@ -1,7 +1,7 @@
 plugins {
 	application
 	id("org.openjfx.javafxplugin")
-    id("org.jetbrains.kotlin.jvm")
+    kotlin("jvm")
 }
 
 application {
@@ -9,7 +9,7 @@ application {
 }
 
 javafx {
-    version = "12.0.2"
+    version = "14"
     modules("javafx.controls")
 }
 
