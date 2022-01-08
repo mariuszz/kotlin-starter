@@ -1,13 +1,7 @@
-plugins {
-	application
-    kotlin("jvm")
+dependencies {
+    implementation(project(":core"))
 }
-
 
 application {
-    mainClassName = "com.zamolski.kotlinstarter.console.MainKt"
-}
-
-dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    mainClass.set("com.zamolski.kotlinstarter.console.MainKt")
 }

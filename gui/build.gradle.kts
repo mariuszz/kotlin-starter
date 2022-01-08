@@ -1,18 +1,16 @@
 plugins {
-	application
 	id("org.openjfx.javafxplugin")
-    kotlin("jvm")
-}
-
-application {
-    mainClassName = "com.zamolski.kotlinstarter.gui.MainKt"
-}
-
-javafx {
-    version = "14"
-    modules("javafx.controls")
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(project(":core"))
+}
+
+application {
+    mainClass.set("com.zamolski.kotlinstarter.gui.MainKt")
+}
+
+javafx {
+    version = "17"
+    modules("javafx.controls")
 }

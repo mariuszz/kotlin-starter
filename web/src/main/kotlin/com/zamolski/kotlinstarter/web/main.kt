@@ -1,5 +1,6 @@
 package com.zamolski.kotlinstarter.web
 
+import com.zamolski.kotlinstarter.core.info
 import io.ktor.application.call
 import io.ktor.http.ContentType
 import io.ktor.response.respondText
@@ -12,7 +13,7 @@ fun main() {
     embeddedServer(Netty, 8888) {
         routing {
             get("/") {
-                call.respondText("Kotlin works!", ContentType.Text.Html)
+                call.respondText(info(), ContentType.Text.Html)
             }
         }
     }.start(wait = true)

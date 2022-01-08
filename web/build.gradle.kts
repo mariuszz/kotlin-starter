@@ -1,14 +1,9 @@
-plugins {
-    application
-    kotlin("jvm")
-}
-
 dependencies {
-    implementation("io.ktor:ktor-server-netty:1.3.2")
-    runtimeOnly("org.slf4j:slf4j-simple:1.7.30")
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(project(":core"))
+    implementation("io.ktor:ktor-server-netty:1.6.7")
+    runtimeOnly("org.slf4j:slf4j-simple:1.7.32")
 }
 
 application {
-    mainClassName = "com.zamolski.kotlinstarter.web.MainKt"
+    mainClass.set("com.zamolski.kotlinstarter.web.MainKt")
 }

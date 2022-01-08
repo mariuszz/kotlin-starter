@@ -1,3 +1,5 @@
 package com.zamolski.kotlinstarter.console
 
-fun main() = println("Kotlin works!")
+import com.zamolski.kotlinstarter.core.info
+
+fun main() = println(info())
